@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: skyblue;
+  padding: 7px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+.list {
+  text-decoration: none;
+}
