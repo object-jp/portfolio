@@ -17,7 +17,7 @@ const Home = () => {
       </nav>
       </header>
     <main>
-      <p>Hello!</p>
+      <p className="homeText">Hello!</p>
     </main>
     </>
   );

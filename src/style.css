@@ -13,9 +13,30 @@ ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  text-decoration-line: none;
+}
+
+li:hover {
+  transition: all 0.3s ease 0s;
+  transform: scale(1.2);
 }
 
 .list {
+  color: white;
   text-decoration: none;
+  text-shadow: 2px 1.5px black;
+}
+
+.homeText {
+  color: skyblue;
+  font-size: 70px;
+  text-align: center;
+  line-height: 600px;
+  animation: Hello 5s;
+}
+
+@keyframes Hello {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
