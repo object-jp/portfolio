@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home';
-import Profile from './Profile';
-import Work from './Work';
-import Contact from './Contact'
+import Home from './components/Home';
+import Profile from './components/Profile';
+import Work from './components/Work';
+import Contact from './components/Contact'
+import style from './style.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 ReactDOM.render(
