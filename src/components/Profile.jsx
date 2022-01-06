@@ -1,7 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom'
+import { FaGithub, FaTwitter } from "react-icons/fa"
 
 const Profile = () => {
+  const contactLink = {
+    textDecoration: 'none',
+    color: '#343434'
+  }
   return (
     <>
       <header>
@@ -21,8 +26,8 @@ const Profile = () => {
         <p>生年月日：2003年06月12日</p>
         <p>出身：神奈川県</p>
         <p>自己PR</p>
-        <a href='https://github.com/object-jp'>Github</a>
-        <a href='https://twitter.com/object_Go'>Twitter</a>
+        <a style={contactLink} href='https://github.com/object-jp' target="_blank"><FaGithub />Github</a>
+        <a style={contactLink} href='https://twitter.com/object_Go' target="_blank"><FaTwitter />Twitter</a>
       </main>
     </>
   );
