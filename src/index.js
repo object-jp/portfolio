@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Home from './components/Home';
 import Profile from './components/Profile';
 import Work from './components/Work';
-import Contact from './components/Contact'
+import Skills from './components/Skills'
 import style from './style.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -13,7 +13,7 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/skills" element={<Skills />} />
     </Routes>
   </Router>,
   document.getElementById('root')

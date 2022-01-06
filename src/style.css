@@ -26,14 +26,6 @@ li:hover {
   text-shadow: 2px 1.5px black;
 }
 
-.homeText {
-  color: skyblue;
-  font-size: 70px;
-  text-align: center;
-  line-height: 600px;
-  animation: Hello 5s;
-}
-
 @keyframes Hello {
   from {
     opacity: 0;

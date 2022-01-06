@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
+  const hello = {
+    color: 'skyblue',
+    fontSize: '70px',
+    textAlign: 'center',
+    lineHeight: '600px',
+    animation: 'Hello 5s'
+  }
   return (
     <>
       <header>
@@ -11,12 +18,12 @@ const Home = () => {
           <li><Link className='list' to="/">Home</Link></li>
           <li><Link className='list' to="/profile">Profile</Link></li>
           <li><Link className='list' to="/work">Work</Link></li>
-          <li><Link className='list' to="/contact">Contact</Link></li>
+          <li><Link className='list' to="/skills">Skills</Link></li>
         </ul>
       </nav>
       </header>
     <main>
-      <p className="homeText">Hello!</p>
+      <p style={hello}>Hello!</p>
     </main>
     </>
   );

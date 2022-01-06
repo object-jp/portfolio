@@ -10,7 +10,7 @@ const Work = () => {
           <li><Link className='list' to="/">Home</Link></li>
           <li><Link className='list' to="/profile">Profile</Link></li>
           <li><Link className='list' to="/work">Work</Link></li>
-          <li><Link className='list' to="/contact">Contact</Link></li>
+          <li><Link className='list' to="/skills">Skills</Link></li>
           </ul>
         </nav>
       </header>
