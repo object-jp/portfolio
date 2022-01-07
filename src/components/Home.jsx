@@ -1,22 +1,24 @@
 import React from 'react'
 import Nav from './Nav'
+import styled from 'styled-components'
+
 
 
 const Home = () => {
-  const hello = {
-    color: 'skyblue',
-    fontSize: '70px',
-    textAlign: 'center',
-    lineHeight: '600px',
-    animation: 'Hello 5s'
-  }
+  const Hello = styled.p `
+    color: skyblue;
+    font-size: 70px;
+    text-align: center;
+    line-height: 600px;
+    animation: Hello 5s;
+  `
   return (
     <>
       <header>
         <Nav />
       </header>
     <main>
-      <p style={hello}>Hello!</p>
+      <Hello>Hello!</Hello>
     </main>
     </>
   );
