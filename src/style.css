@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+  background: linear-gradient(white, 90%, skyblue);
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-li:hover {
+.list:hover {
   transition: all 0.3s ease 0s;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .link {

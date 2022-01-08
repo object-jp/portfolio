@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons'
 import { VscHome,VscAccount,VscSave,VscSearch } from "react-icons/vsc"
 import styled from 'styled-components'
 
 const Nav = () => {
   const Nav = styled.nav `
-    background-color: skyblue;
+    background-color: #5999e8;
     padding: 7px;
   `
   const Ul = styled.ul `
@@ -16,10 +17,12 @@ const Nav = () => {
   return (
     <Nav>
       <Ul>
-        <li><Link className='link' to="/"><VscHome />Home</Link></li>
-        <li><Link className='link' to="/profile"><VscAccount />Profile</Link></li>
-        <li><Link className='link' to="/work"><VscSave />Work</Link></li>
-        <li><Link className='link' to="/skills"><VscSearch />Skills</Link></li>
+        <IconContext.Provider value={{ size: '17px', style: { verticalAlign: 'middle'} }}>
+          <li className='list'><Link className='link' to="/"><VscHome />Home</Link></li>
+          <li className='list'><Link className='link' to="/profile"><VscAccount />Profile</Link></li>
+          <li className='list'><Link className='link' to="/work"><VscSave />Work</Link></li>
+          <li className='list'><Link className='link' to="/skills"><VscSearch />Skills</Link></li>
+        </IconContext.Provider>
       </Ul>
     </Nav>
   )

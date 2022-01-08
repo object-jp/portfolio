@@ -6,11 +6,11 @@ import styled from 'styled-components'
 
 const Home = () => {
   const Hello = styled.p `
+    text-align: center;
+    padding-top: 30vh;
     color: skyblue;
     font-size: 70px;
-    text-align: center;
-    line-height: 600px;
-    animation: Hello 5s;
+    animation: Hello 3s;
   `
   return (
     <>
@@ -19,6 +19,7 @@ const Home = () => {
       </header>
     <main>
       <Hello>Hello!</Hello>
+      <p></p>
     </main>
     </>
   );
