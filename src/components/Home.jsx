@@ -1,16 +1,22 @@
 import React from 'react'
 import Nav from './Nav'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 
 
 const Home = () => {
+  const Animation = keyframes `
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  `
   const Hello = styled.p `
     text-align: center;
     padding-top: 30vh;
     color: skyblue;
     font-size: 70px;
-    animation: Hello 3s;
+    animation: ${Animation} 3s ease-in;
   `
   return (
     <>

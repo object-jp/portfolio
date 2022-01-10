@@ -14,14 +14,22 @@ const Nav = () => {
     justify-content: space-around;
     list-style: none;
   `
+  const List = styled.li `
+    color: white;
+    text-shadow: 2px 1.5px black;
+    &:hover{
+      transition: all 0.3s ease 0s;
+      transform: scale(1.3);
+    }
+  `
   return (
     <Nav>
       <Ul>
         <IconContext.Provider value={{ size: '17px', style: { verticalAlign: 'middle'} }}>
-          <li className='list'><Link className='link' to="/"><VscHome />Home</Link></li>
-          <li className='list'><Link className='link' to="/profile"><VscAccount />Profile</Link></li>
-          <li className='list'><Link className='link' to="/work"><VscSave />Work</Link></li>
-          <li className='list'><Link className='link' to="/skills"><VscSearch />Skills</Link></li>
+          <Link style={{ textDecoration: 'none' }} to="/"><List><VscHome />Home</List></Link>
+          <Link style={{ textDecoration: 'none' }} to="/profile"><List><VscAccount />Profile</List></Link>
+          <Link style={{ textDecoration: 'none' }} to="/work"><List><VscSave />Work</List></Link>
+          <Link style={{ textDecoration: 'none' }} to="/skills"><List><VscSearch />Skills</List></Link>
         </IconContext.Provider>
       </Ul>
     </Nav>
